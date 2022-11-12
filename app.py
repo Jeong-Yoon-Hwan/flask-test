@@ -1,4 +1,5 @@
 from flask import Flask,request,jsonify
+import dbconn
 
 app = Flask(__name__)
 
@@ -10,6 +11,12 @@ def home():
 def get_echo_call():
   param = request.get_json()
   return jsonify({"title": "hello"})
+
+
+@app.route("/test",method=["POST"])
+def test():
+  
+  return jsonify()
 
 if __name__== "__main__":
   app.run(debug=True)
