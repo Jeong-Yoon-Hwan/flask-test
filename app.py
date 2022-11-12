@@ -13,10 +13,6 @@ def get_echo_call():
   return jsonify({"title": "hello"})
 
 
-@app.route("/test",method=["POST"])
-def test():
-  
-  return jsonify()
 
 if __name__== "__main__":
   app.run(debug=True)
