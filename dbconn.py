@@ -28,4 +28,4 @@ for (name,code,market) in cur:
   arr.append({'name':name,'code':code,'market':market})
 conn.close()
 
-print(arr)
+#print(arr)
